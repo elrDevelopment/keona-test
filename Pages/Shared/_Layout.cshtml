@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link href="https://bit.ly/3h1dqrN" rel="stylesheet">
+    <link rel="stylesheet" href="https://bit.ly/2FneCrv">
+    <link rel="stylesheet"
+          href="https://bit.ly/3iMUmOK">
+
+</head>
+<body>
+
+<nav class="bg-white shadow">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center h-18">
+      <div class="flex">
+        <div class="flex-shrink-0 flex items-center py-1">
+          <a asp-page="/Index">
+            <img class="h-16 w-auto" src="https://res.cloudinary.com/erickroberts-com/image/upload/v1597593138/erickbobblehead_htkqf8.png" alt="erick logo">
+          </a>
+          
+        </div>
+        
+        <div class="hidden sm:ml-6 sm:flex">
+          <a  asp-page="/Index" id="dashboard" class=" text-gray-700  inline-flex items-center px-1 hover:bg-gray-300 hover:text-black text-base font-medium leading-5 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out">
+            Dashboard
+          </a>
+          <div id="exercises" class="relative px-10 pt-6 hover:bg-gray-300 hover:text-black ">
+            <button type="button" onclick="showHideMenu()" class="group text-gray-700 inline-flex items-center space-x-2 text-base leading-6 font-medium  focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+              <span>Exercise Solutions</span>
+              <!-- Item active: "text-gray-600", Item inactive: "text-gray-400" -->
+              <svg class="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="menu"  class="hidden absolute left-1/2 transform -translate-x-1/2 mt-3  px-2 w-screen max-w-xs sm:px-0">
+              <div class="rounded-lg shadow-lg">
+                <div class="rounded-lg shadow-xs overflow-hidden">
+                  <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <a asp-page="/Exercise1" class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Exercise #1 - SQL
+                      </p>
+                    </a>
+                    <a asp-page="/Exercise2" class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Exercise #2 - High Availablilty
+                      </p>
+                    </a>
+                    <a asp-page="/Exercise3" class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Exercise #3 - JavaScript 
+                      </p>
+                    </a>
+                    <a asp-page="/Exercise4" class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Exercise #4 - C#
+                      </p>
+                    </a>
+                    <a asp-page="/Exercise5" class="-m-3 p-3 block space-y-1 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Exercise #5 - Tools/Tech
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+        
+      </div>
+    
+     
+    </div>
+  </div>
+
+  
+</nav>
+
+
+<div class="">
+    <main role="main" class="">
+        @RenderBody()
+    </main>
+</div>
+
+
+
+<script src="https://bit.ly/31ZaHJn" defer></script>
+    <script src="https://bit.ly/3iC7jL4"></script>
+
+<script>
+hljs.initHighlightingOnLoad();
+let show = false;
+
+function showHideMenu(){
+  
+  var element = document.getElementById("menu");
+  if(!show) {
+    element.classList.remove("hidden");
+    element.classList.add("block");
+    show = true;
+  } else {
+    show = false;
+   element.classList.remove("block");
+    element.classList.add("hidden");
+  }
+}
+</script>
+@RenderSection("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Keona Test Home";
+}
+
+<div class="px-5 mt-10 container max-w-7xl mx-auto">
+  <div class="text-center">
+     <h1 class="text-2xl">Welcome to Erick's Keona Health Exercise Application</h1>
+  </div>
+ 
+  <h3 class="text-xl text-gray-500 mt-10">Select an Exercise to Review</h3>
+
+  <ul class="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-2">
+    <li class="col-span-1 flex shadow-sm rounded-md">
+    <div class="flex-shrink-0 flex items-center justify-center w-16 bg-pink-600 text-white text-sm leading-5 font-medium rounded-l-md">
+        EX-1
+      </div>
+      <div class="hover:bg-gray-200 flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+        <a asp-page="/Exercise1"  class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+          <p class="text-gray-900 font-medium hover:text-gray-600 transition ease-in-out duration-150">SQL</p>
+          <p class="text-blue-500">Show Answer</p>
+        </a>
+        <div class="flex-shrink-0 pr-2">
+         
+        </div>
+      </div>
+      
+    </li>
+    <li class="col-span-1 flex shadow-sm rounded-md">
+      <div class="flex-shrink-0 flex items-center justify-center w-16 bg-indigo-600 text-white text-sm leading-5 font-medium rounded-l-md">
+        EX-2
+      </div>
+      <div class="hover:bg-gray-200 flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+        <a asp-page="/Exercise2"  class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+          <p class="text-gray-900 font-medium hover:text-gray-600 transition ease-in-out duration-150">High Availability Upgrades</p>
+          <p class="text-blue-500">Show Answer</p>
+        </a>
+        <div class="flex-shrink-0 pr-2">
+  
+        </div>
+      </div>
+    </li>
+    <li class="col-span-1 flex shadow-sm rounded-md">
+      <div class="flex-shrink-0 flex items-center justify-center w-16 bg-blue-600 text-white text-sm leading-5 font-medium rounded-l-md">
+        EX-3
+      </div>
+      <div class="hover:bg-gray-200 flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+        <a asp-page="/Exercise3"  class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+          <p class="text-gray-900 font-medium hover:text-gray-600 transition ease-in-out duration-150">Javascript Basics</p>
+          <p class="text-blue-500">Show Answer</p>
+        </a>
+
+      </div>
+    </li>
+    <li class="col-span-1 flex shadow-sm rounded-md">
+      <div class="flex-shrink-0 flex items-center justify-center w-16 bg-orange-600 text-white text-sm leading-5 font-medium rounded-l-md">
+        EX-4
+      </div>
+      <div class="hover:bg-gray-200 flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+        <a asp-page="/Exercise4" class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+          <p  class="text-gray-900 font-medium hover:text-gray-600 transition ease-in-out duration-150">C# Data Access</p>
+          <p class="text-blue-500">Show Answer</p>
+        </a>
+    
+      </div>
+    </li>
+    <li class="col-span-1 flex shadow-sm rounded-md">
+      <div class="flex-shrink-0 flex items-center justify-center w-16 bg-yellow-600 text-white text-sm leading-5 font-medium rounded-l-md">
+        EX-5
+      </div>
+      <div class="hover:bg-gray-200 flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+        <a asp-page="/Exercise5"  class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+          <p class="text-gray-900 font-medium hover:text-gray-600 transition ease-in-out duration-150">Tech and Tools</p>
+          <p class="text-blue-500">Show Answer</p>
+        </a>
+     
+      </div>
+    </li>
+  </ul>
+
+</div>
