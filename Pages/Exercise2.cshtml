@@ -13,7 +13,7 @@
           Exercise 2 - High Availability Upgrades
         </h2>
         <h3 class="text-gray-700">
-          I didn't see any configuration requirements. Assuming Cloud Architecture.
+          Assuming a cloud architecture is being used.
         </h3>
   </div>
 </div>
@@ -30,7 +30,7 @@
             <dl>
               <div class="md:grid md:grid-cols-12 md:gap-8">
                 <dt class="text-base leading-6 font-medium text-gray-900 md:col-span-5">
-                  Continuous Development / Continuous Integration / Automated Tests?
+                  Continuous Development / Continuous Integration / Continuous Tests
                 </dt>
                 <dd class="mt-2 md:mt-0 md:col-span-7">
                   <p class="text-base leading-6 text-gray-500">
@@ -50,6 +50,18 @@
                     The other tool or mechanism that makes the upgrade process fairly easy is some version of an API Gateway. This tool or service allows one point of entry to an environment.
                     It may be coupled with a load balancing mechanism as well to control and adjust traffic as needed. However, it comes in handy when doing updates and upgrades to the system.
                     The idea is you point the public facing api traffic to a web or micro service.
+
+                  </p>
+                </dd>
+              </div>
+               <div class="mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8">
+                <dt class="text-base leading-6 font-medium text-gray-900 md:col-span-5">
+                  Micro Services
+                </dt>
+                <dd class="mt-2 md:mt-0 md:col-span-7">
+                  <p class="text-base leading-6 text-gray-500">
+                    The scenario in the diagram listed could be multiplied if developed with micro service architecture in mind.
+                    One could limit the amount of downtime this way by breaking the application in to multiple applications and limit the effect of code changes and upgrades.
 
                   </p>
                 </dd>
@@ -85,7 +97,7 @@
     </h2>
    
   <div class="flex justify-center mt-5">
-        <iframe src="https://netorgft4560686-my.sharepoint.com/personal/erick_r10dev_com/_layouts/15/Doc.aspx?sourcedoc={bb27efff-4fba-4e90-a49a-31c2242b8c60}&amp;action=embedview" 
+        <iframe src="https://netorgft4560686-my.sharepoint.com/:u:/g/personal/erick_r10dev_com/Ef_vJ7u6T5BOpJoxwiQrjGABSN2H4lC6I5yO2fCGheUz4Q?e=IkwGAx&action=embedview" 
                   width="800px" height="627px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> diagram, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
     </div>
   </div>
